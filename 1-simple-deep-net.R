@@ -79,12 +79,12 @@ visualize.image <- function(img){
 
 # Let's try it on the first image:
 
-visualize.image(train_images[1,,])
+visualize.image(train_images[60,,])
 
 # What is it? We can look at the category label for each image by looking
 # at the corresponding label.
 
-train_labels[1]
+train_labels[60]
 
 # This is category 9. If you scroll up you'll see that category 9 is "ankle boot".
 
@@ -173,9 +173,9 @@ wrong.answers <- which(test.predictions != test_labels)
 
 # We can visualize a few of these to see what the network had trouble with.
 
-visualize.image(test_images[wrong.answers[1],,]) # show the image
-test.predictions[wrong.answers[1]] # category that the model predicted
-test_labels[wrong.answers[1]] # correct answer
+visualize.image(test_images[wrong.answers[2],,]) # show the image
+test.predictions[wrong.answers[2]] # category that the model predicted
+test_labels[wrong.answers[2]] # correct answer
 
 
 
